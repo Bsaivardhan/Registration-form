@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Registration From</title>
+
+<style>
+    *{
+        background-color: burlywood;
+    }
+    .container{
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+    hr{
+        height:2px;
+        width:100%;
+        color:gray;
+        background-color:gray
+    }
+    li{
+        text-decoration: none;
+        
+    }
+    a{
+        color: black;
+    
+    }
+   
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <h3>Please fill in the form below.</h3>
+        <hr>
+        <form>
+            <div class="form-group">
+                <label for="name">Participant Name:</label>
+                <input type="text" class="form-control" placeholder="Enter name" id="name">
+              </div>
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" placeholder="Enter email" id="email">
+              </div>
+            <div class="form-group">
+                <label for="Phone">Phone Number:</label>
+                <input type="text" class="form-control" placeholder="Enter Number" id="phone">
+            </div>
+            <div class="form-group">
+                <label for="affiliation">Affiliation:</label>
+                <input type="text" class="form-control" placeholder="" id="affiliation">
+            </div>
+
+              <h5><b>Dietary preferences:</b></h5>
+                <input type="checkbox" class="custom-control-input" id="vegetarian" name="example1">
+                <label class="custom-control-label" for="vegetarian">vegetarian</label><br>
+                <input type="checkbox" class="custom-control-input" id="vegan" name="example2">
+                <label class="custom-control-label" for="vegan">vegan</label><br>
+                <input type="checkbox" class="custom-control-input" id="gluten-free" name="example3">
+                <label class="custom-control-label" for="gluten-free"> gluten-free</label> <br> 
+               
+                <div class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>Workshop</b><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">React</a></li>
+                              <li><a href="#">Javascript</a></li>
+                              <li><a href="#">Node</a></li>
+                            </ul>
+                </div>
+
+                <h5><b>Registration Type:</b></h5>
+                <div class="radio">
+                    <label><input type="radio" name="optradio" >"General Attendee</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio">Student</label>
+                </div>
+                <div class="radio disabled">
+                    <label><input type="radio" name="optradio" >"VIP</label>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
